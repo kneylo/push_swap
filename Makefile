@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/10/21 17:38:54 by mag              ###   ########.fr        #
+#    Updated: 2026/10/23 03:16:10 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,20 @@ NAME = push_swap.a
 LIBFT = libft/libft.a
 
 SRC = src/push_swap.c \
+	src/stack/stack_add_back.c \
+	src/stack/stack_add_front.c \
+	src/stack/stack_clear.c \
+	src/stack/stack_delone.c \
+	src/stack/stack_iter.c \
+	src/stack/stack_last.c \
+	src/stack/stack_map.c \
+	src/stack/stack_new.c \
+	src/stack/stack_size.c \
+	src/moves/swap.c \
+	src/moves/push.c \
+	src/moves/rotate.c \
+	src/moves/reverse_rotate.c \
+	
 
 OBJ = $(SRC:.c=.o)
 
@@ -24,13 +38,13 @@ CFLAGS = -Wall -Werror -Wextra -Ilibft/include -Iinclude
 all: $(NAME)
 	
 $(NAME): $(OBJ) $(LIBFT)
-	mkdir -p obj_tmp
-	cd obj_tmp && ar -x ../$(LIBFT)
-	ar rcs $@ $(OBJ) obj_tmp/*.o
-	rm -rf obj_tmp
+	ar rcs $@ $(OBJ)
 
 $(LIBFT):
 	@make -C libft --no-print-directory
+
+exe:
+	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -o a.out
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -43,6 +57,9 @@ fclean: clean
 	rm -f $(NAME)
 	@make fclean -C libft --no-print-directory
 
+ffclean: fclean
+	rm -f $(EXE)
+
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re ffclean exe
