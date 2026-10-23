@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/10/23 03:16:10 by mag              ###   ########.fr        #
+#    Updated: 2026/10/23 04:35:52 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ fclean: clean
 	@make fclean -C libft --no-print-directory
 
 ffclean: fclean
-	rm -f $(EXE)
+	rm -f a.out
 
 re: fclean all
 
