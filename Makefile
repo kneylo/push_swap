@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/10/23 04:35:52 by mag              ###   ########.fr        #
+#    Updated: 2026/10/26 14:16:12 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,7 @@ NAME = push_swap.a
 
 LIBFT = libft/libft.a
 
-SRC = src/push_swap.c \
-	src/stack/stack_add_back.c \
+SRC = src/stack/stack_add_back.c \
 	src/stack/stack_add_front.c \
 	src/stack/stack_clear.c \
 	src/stack/stack_delone.c \
@@ -28,6 +27,9 @@ SRC = src/push_swap.c \
 	src/moves/push.c \
 	src/moves/rotate.c \
 	src/moves/reverse_rotate.c \
+	src/algo/simple.c \
+	src/algo/medium.c \
+	src/algo/adaptive.c \
 	
 
 OBJ = $(SRC:.c=.o)
@@ -45,6 +47,9 @@ $(LIBFT):
 
 exe:
 	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -o a.out
+
+g:
+	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -g -o a.out
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
