@@ -3,10 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   simple.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 16:15:39 by mag               #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2026/11/03 14:21:17 by mag              ###   ########.fr       */
+=======
+<<<<<<< HEAD
+/*   Updated: 2026/11/02 20:15:32 by mag              ###   ########.fr       */
+=======
+/*   Updated: 2026/11/02 19:01:49 by nkreter          ###   ########.fr       */
+>>>>>>> 5b1a961 (rebasing neylo with mag changes, mainly the main)
+>>>>>>> 3315e04 (rebasing neylo with mag changes, mainly the main)
 /*                                                                            */
 /* ************************************************************************** */
 
