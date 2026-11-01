@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_new.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 16:49:00 by mag               #+#    #+#             */
-/*   Updated: 2026/10/31 18:08:03 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/02 19:09:48 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ t_stack	*stack_new(long data)
 	new->data = data;
 	new->index = -1;
 	new->next = NULL;
+	new->index = -1;
 	return (new);
 }
