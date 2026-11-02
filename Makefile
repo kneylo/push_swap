@@ -5,12 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2026/11/03 14:24:54 by mag              ###   ########.fr        #
-=======
-#    Updated: 2026/11/02 19:02:43 by nkreter          ###   ########.fr        #
->>>>>>> 3315e04 (rebasing neylo with mag changes, mainly the main)
+#    Created: 2026/11/03 15:55:04 by nkreter           #+#    #+#              #
+#    Updated: 2026/11/03 15:55:09 by nkreter          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
