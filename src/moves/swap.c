@@ -3,16 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:02:05 by mag               #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2026/11/02 19:39:42 by mag              ###   ########.fr       */
-=======
-/*   Updated: 2026/11/02 19:02:54 by nkreter          ###   ########.fr       */
->>>>>>> 5b1a961 (rebasing neylo with mag changes, mainly the main)
+/*   Updated: 2026/11/03 14:20:22 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "push_swap.h"
 
