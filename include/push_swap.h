@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:19:15 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 18:29:16 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/02 19:38:04 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ typedef struct s_bench
 }	t_bench;
 
 // MOVES
-void			sa(t_stack *a, t_bench *bench);
-void			sb(t_stack *b, t_bench *bench);
-void			ss(t_stack *a, t_stack *b, t_bench *bench);
+void			sa(t_stack **a, t_bench *bench);
+void			sb(t_stack **b, t_bench *bench);
+void			ss(t_stack **a, t_stack **b, t_bench *bench);
 void			pa(t_stack **a, t_stack **b, t_bench *bench);
 void			pb(t_stack **b, t_stack **a, t_bench *bench);
 void			ra(t_stack **a, t_bench *bench);
