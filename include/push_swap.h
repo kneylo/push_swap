@@ -6,7 +6,7 @@
 /*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:19:15 by mag               #+#    #+#             */
-/*   Updated: 2026/11/03 15:55:29 by nkreter          ###   ########.fr       */
+/*   Updated: 2026/11/03 15:56:53 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,6 @@ t_stack			*parser(int ac, char **av, t_algo *flag_algo, t_bench *bench);
 double			compute_disorder(t_stack *a);
 
 // FONCTIONS
-double	compute_disorder(t_stack *a);
+double			compute_disorder(t_stack *a);
 
 #endif
