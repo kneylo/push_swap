@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 22:13:23 by mag               #+#    #+#             */
-/*   Updated: 2026/10/23 03:55:15 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/02 11:22:12 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,23 +26,29 @@ static void	reverse_rotate(t_stack **stack)
 	*stack = tmp;
 }
 
-void	rra(t_stack **a)
+void	rra(t_stack **a, t_bench *bench)
 {
 	if (!a || !*a || !(*a)->next)
 		return ;
 	reverse_rotate(a);
-	ft_printf("rra\n");
+	if (!bench->flag)
+		ft_printf("rra\n");
+	bench->rra++;
+	bench->total++;
 }
 
-void	rrb(t_stack **b)
+void	rrb(t_stack **b, t_bench *bench)
 {
 	if (!b || !*b || !(*b)->next)
 		return ;
 	reverse_rotate(b);
-	ft_printf("rrb\n");
+	if (!bench->flag)
+		ft_printf("rrb\n");
+	bench->rrb++;
+	bench->total++;
 }
 
-void	rrr(t_stack **a, t_stack **b)
+void	rrr(t_stack **a, t_stack **b, t_bench *bench)
 {
 	if (!a || !*a || !b || !*b)
 		return ;
@@ -50,5 +56,8 @@ void	rrr(t_stack **a, t_stack **b)
 		return ;
 	reverse_rotate(a);
 	reverse_rotate(b);
-	ft_printf("rrr\n");
+	if (!bench->flag)
+		ft_printf("rrr\n");
+	bench->rrr++;
+	bench->total++;
 }

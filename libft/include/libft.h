@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 21:52:58 by mag               #+#    #+#             */
-/*   Updated: 2026/10/20 17:50:42 by mag              ###   ########.fr       */
+/*   Updated: 2026/10/30 16:46:25 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);
 int				ft_atoi(const char *str);
+long			ft_atol(const char *str);
 void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(const char *s1);
 

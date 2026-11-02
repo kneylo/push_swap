@@ -6,13 +6,13 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 17:46:43 by mag               #+#    #+#             */
-/*   Updated: 2026/10/23 00:08:09 by mag              ###   ########.fr       */
+/*   Updated: 2026/10/30 13:49:42 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stack	*stack_map(t_stack *lst, int (*f)(int))
+t_stack	*stack_map(t_stack *lst, long (*f)(long))
 {
 	t_stack	*res;
 	t_stack	*new;

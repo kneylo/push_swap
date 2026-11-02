@@ -6,13 +6,13 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 02:32:52 by mag               #+#    #+#             */
-/*   Updated: 2026/10/22 23:56:19 by mag              ###   ########.fr       */
+/*   Updated: 2026/10/30 13:49:55 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	stack_iter(t_stack *lst, void (*f)(int))
+void	stack_iter(t_stack *lst, void (*f)(long))
 {
 	if (!f || !lst)
 		return ;

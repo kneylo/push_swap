@@ -6,19 +6,30 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 16:15:39 by mag               #+#    #+#             */
-/*   Updated: 2026/10/26 15:23:10 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/02 18:48:03 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	simple(t_stack **a, t_stack **b)
+static void	small_stack(t_stack **a, t_bench *bench)
+{
+	if (a->data > a->next->data)
+		sa(a, bench);
+}
+
+void	simple(t_stack **a, t_stack **b, t_bench *bench)
 {
 	int		biggest;
 	t_stack	*tmp;
 
+	if (stack_size(a) <= 3)
+	{
+		small_stack(a, bench);
+		return ;
+	}
 	while (*a)
-		pb(b, a);
+		pb(b, a, bench);
 	while (*b)
 	{
 		tmp = *b;
@@ -30,7 +41,7 @@ void	simple(t_stack **a, t_stack **b)
 			tmp = tmp->next;
 		}
 		while (biggest != (*b)->data)
-			rb(b);
-		pa(a, b);
+			rb(b, bench);
+		pa(a, b, bench);
 	}
 }

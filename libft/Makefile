@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/10/21 17:05:26 by mag              ###   ########.fr        #
+#    Updated: 2026/10/30 16:45:34 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC = src/ft_isalpha.c \
 	src/ft_memcmp.c \
 	src/ft_strnstr.c \
 	src/ft_atoi.c \
+	src/ft_atol.c \
 	src/ft_calloc.c \
 	src/ft_strdup.c \
 	src/ft_substr.c \

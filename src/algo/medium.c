@@ -6,25 +6,11 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 20:49:46 by mag               #+#    #+#             */
-/*   Updated: 2026/10/26 15:23:01 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/02 18:16:05 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-static void	init_index(t_stack **a)
-{
-	t_stack	*current;
-
-	if (!a || !*a)
-		return ;
-	current = *a;
-	while (current)
-	{
-		current->index = -1;
-		current = current->next;
-	}
-}
 
 static void	assign_index(t_stack **a)
 {
@@ -35,7 +21,6 @@ static void	assign_index(t_stack **a)
 	if (!a || !*a)
 		return ;
 	i = stack_size(*a) - 1;
-	init_index(a);
 	while (i >= 0)
 	{
 		current = *a;
@@ -64,7 +49,7 @@ static int	chunk_size(int size)
 	return (i);
 }
 
-static void	push_to_b(t_stack **a, t_stack **b)
+static void	push_to_b(t_stack **a, t_stack **b, t_bench *bench)
 {
 	int		size;
 	int		max;
@@ -79,17 +64,17 @@ static void	push_to_b(t_stack **a, t_stack **b)
 		{
 			if ((*a)->index <= max)
 			{
-				pb(b, a);
+				pb(b, a, bench);
 				push_count++;
 			}
 			else
-				ra(a);
+				ra(a, bench);
 		}
 		max += size;
 	}
 }
 
-void	medium(t_stack **a, t_stack **b)
+void	medium(t_stack **a, t_stack **b, t_bench *bench)
 {
 	unsigned int		position;
 	t_stack				*current;
@@ -97,7 +82,7 @@ void	medium(t_stack **a, t_stack **b)
 
 	i = stack_size(*a) - 1;
 	assign_index(a);
-	push_to_b(a, b);
+	push_to_b(a, b, bench);
 	while (*b && i >= 0)
 	{
 		position = 0;
@@ -109,11 +94,11 @@ void	medium(t_stack **a, t_stack **b)
 		}
 		if (position <= stack_size(*b) / 2)
 			while ((*b)->index != i)
-				rb(b);
+				rb(b, bench);
 		else
 			while ((*b)->index != i)
-				rrb(b);
-		pa(a, b);
+				rrb(b, bench);
+		pa(a, b, bench);
 		i--;
 	}
 }

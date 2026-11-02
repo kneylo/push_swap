@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/10/26 14:16:12 by mag              ###   ########.fr        #
+#    Updated: 2026/11/02 18:25:18 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,8 +29,12 @@ SRC = src/stack/stack_add_back.c \
 	src/moves/reverse_rotate.c \
 	src/algo/simple.c \
 	src/algo/medium.c \
+	src/algo/complex.c \
 	src/algo/adaptive.c \
-	
+	src/parser/verif.c \
+	src/parser/parser_utils.c \
+	src/parser/parser.c \
+	src/disorder.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -46,10 +50,10 @@ $(LIBFT):
 	@make -C libft --no-print-directory
 
 exe:
-	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -o a.out
+	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -o push_swap
 
 g:
-	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -g -o a.out
+	$(CC) $(CFLAGS) main.c $(NAME) $(LIBFT) -g -o push_swap
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@

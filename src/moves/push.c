@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:48:50 by mag               #+#    #+#             */
-/*   Updated: 2026/10/23 03:51:52 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/02 11:15:58 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pa(t_stack **a, t_stack **b)
+void	pa(t_stack **a, t_stack **b, t_bench *bench)
 {
 	t_stack	*tmp;
 
@@ -22,10 +22,13 @@ void	pa(t_stack **a, t_stack **b)
 	*b = (*b)->next;
 	tmp->next = *a;
 	*a = tmp;
-	ft_printf("pa\n");
+	if (!bench->flag)
+		ft_printf("pa\n");
+	bench->pa++;
+	bench->total++;
 }
 
-void	pb(t_stack **b, t_stack **a)
+void	pb(t_stack **b, t_stack **a, t_bench *bench)
 {
 	t_stack	*tmp;
 
@@ -35,5 +38,8 @@ void	pb(t_stack **b, t_stack **a)
 	*a = (*a)->next;
 	tmp->next = *b;
 	*b = tmp;
-	ft_printf("pb\n");
+	if (!bench->flag)
+		ft_printf("pb\n");
+	bench->pb++;
+	bench->total++;
 }
