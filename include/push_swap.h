@@ -6,7 +6,7 @@
 /*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:19:15 by mag               #+#    #+#             */
-/*   Updated: 2026/11/03 15:56:53 by nkreter          ###   ########.fr       */
+/*   Updated: 2026/11/03 18:00:29 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ double			compute_disorder(t_stack *a);
 
 // FONCTIONS
 double			compute_disorder(t_stack *a);
+void			print_bench(t_bench *bench, t_algo strat);
 
 #endif

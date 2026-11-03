@@ -6,7 +6,7 @@
 #    By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/03 15:55:04 by nkreter           #+#    #+#              #
-#    Updated: 2026/11/03 15:58:08 by nkreter          ###   ########.fr        #
+#    Updated: 2026/11/03 18:00:18 by nkreter          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ SRC = src/stack/stack_add_back.c \
 	src/parser/verif.c \
 	src/parser/parser_utils.c \
 	src/parser/parser.c \
-	src/disorder.c
+	src/disorder.c \
+	src/print_bench.c
 
 OBJ = $(SRC:.c=.o)
 

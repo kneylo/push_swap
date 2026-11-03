@@ -6,7 +6,7 @@
 /*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 17:02:09 by mag               #+#    #+#             */
-/*   Updated: 2026/11/03 15:57:30 by nkreter          ###   ########.fr       */
+/*   Updated: 2026/11/03 18:10:19 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,7 @@ int	main(int ac, char **av)
 		complex(&a, &b, &bench);
 	else
 		adaptive(&a, &b, &flag_algo, &bench);
+	if (bench.flag)
+		print_bench(&bench, flag_algo);
 	return (0);
 }
