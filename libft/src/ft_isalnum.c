@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 16:54:50 by mag               #+#    #+#             */
-/*   Updated: 2026/10/08 17:02:12 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:30:03 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%d", ft_isalnum(*av[1]));
-	return (0);
-}
- */

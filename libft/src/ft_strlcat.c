@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 00:04:22 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 16:57:05 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:11 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[j + i] = 0;
 	return (j + ft_strlen(src));
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 4)
-		return (1);
-	printf("%zu\n", ft_strlcat(av[1], av[2], atoi(av[3])));
-	printf("%s\n\n", av[1]);
-	return (0);
-}
- */

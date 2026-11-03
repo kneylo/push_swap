@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/10/30 16:45:34 by mag              ###   ########.fr        #
+#    Updated: 2026/11/03 14:36:53 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,6 +65,7 @@ SRC = src/ft_isalpha.c \
 	src/print_unsigned.c \
 	src/print_ptr.c \
 	src/print_hex.c \
+	src/print_f.c
 
 OBJ = $(SRC:.c=.o)
 

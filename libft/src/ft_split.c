@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 15:39:03 by mag               #+#    #+#             */
-/*   Updated: 2026/10/11 21:30:49 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:33:47 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	len_word(char const *s, char c, int i)
 	return (res - i);
 }
 
-void	freestr(char **str)
+static void	freestr(char **str)
 {
 	int	i;
 
@@ -78,19 +78,3 @@ char	**ft_split(char const *s, char c)
 	res[j] = NULL;
 	return (res);
 }
-
-/* int	main(int ac, char **av)
-{
-	char	**res;
-	int		i;
-
-	if (ac != 3)
-		return (1);
-	i = 0;
-	res = ft_split(av[1], *av[2]);
-	while (res[i])
-		printf("%s\n",res[i++]);
-	printf("%s\n",res[i++]);
-	return (0);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 21:04:56 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 16:13:29 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:20 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,19 +29,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
-
-/* char print(unsigned int d,char c)
-{
-	(void) d;
-	printf("%c", c);
-	return (c);
-}
-
-int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	ft_strmapi(av[1], print);
-	return (0);
-}
- */

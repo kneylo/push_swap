@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 17:14:31 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 14:11:13 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:34 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 3)
-		return (1);
-	printf("%s", ft_strrchr(av[1], *av[2]));
-	return (0);
-}
- */

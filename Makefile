@@ -6,7 +6,7 @@
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/11/02 18:25:18 by mag              ###   ########.fr        #
+#    Updated: 2026/11/03 14:24:54 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,12 +15,7 @@ NAME = push_swap.a
 LIBFT = libft/libft.a
 
 SRC = src/stack/stack_add_back.c \
-	src/stack/stack_add_front.c \
-	src/stack/stack_clear.c \
-	src/stack/stack_delone.c \
-	src/stack/stack_iter.c \
 	src/stack/stack_last.c \
-	src/stack/stack_map.c \
 	src/stack/stack_new.c \
 	src/stack/stack_size.c \
 	src/moves/swap.c \

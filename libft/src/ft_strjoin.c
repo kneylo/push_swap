@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 00:58:45 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 17:04:40 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:06 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(res, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
 	return (res);
 }
-
-/* int	main(int ac, char **av)
-{
-	char	*res;
-
-	if (ac != 3)
-		return (1);
-	res = ft_strjoin(av[1], av[2]);
-	printf("%s", res);
-	free (res);
-	res = NULL;
-	return (0);
-}
- */

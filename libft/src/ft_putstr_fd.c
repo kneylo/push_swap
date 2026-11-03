@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 14:29:22 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 18:32:44 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:33:26 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (*s)
 		ft_putchar_fd(*s++, fd);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	ft_putstr_fd(av[1], 1);
-	return (0);
-}
- */

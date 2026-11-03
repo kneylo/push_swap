@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:19:15 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 19:38:04 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:25:46 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,25 +67,21 @@ void			rrr(t_stack **a, t_stack **b, t_bench *bench);
 // STACK
 unsigned int	stack_size(t_stack *lst);
 t_stack			*stack_new(long data);
-// t_stack			*stack_map(t_stack *lst, long (*f)(long));
 t_stack			*stack_last(t_stack *lst);
 t_stack			*stack_last_prev(t_stack *lst);
-// void			stack_iter(t_stack *lst, void (*f)(long));
-void			stack_delone(t_stack *lst);
-void			stack_clear(t_stack **lst);
-void			stack_add_front(t_stack **lst, t_stack *new);
 void			stack_add_back(t_stack **lst, t_stack *new);
 
 // ALGO
 void			simple(t_stack **a, t_stack **b, t_bench *bench);
 void			medium(t_stack **a, t_stack **b, t_bench *bench);
 void			complex(t_stack **a, t_stack **b, t_bench *bench);
-void			adaptive(t_stack **a, t_stack **b, t_bench *bench);
+void			adaptive(t_stack **a, t_stack **b, t_algo *flag_algo,
+					t_bench *bench);
 int				find_max_bits(int stack_size);
 void			indexing(t_stack *a);
 
 // PARSER
-t_algo			flag(char **av);
+t_algo			flag(char *av);
 void			free_arg(char **str);
 long			*verif(int ac, char **av, int *len);
 t_stack			*parser(int ac, char **av, t_algo *flag_algo, t_bench *bench);

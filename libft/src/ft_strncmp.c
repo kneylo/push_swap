@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 03:11:16 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 14:24:31 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:24 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 4)
-		return (1);
-	printf("%d", ft_strncmp(av[1], av[2], atoi(av[3])));
-	return (0);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 15:05:14 by mag               #+#    #+#             */
-/*   Updated: 2026/10/11 16:52:12 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:31:23 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%s", ft_itoa(atoi(av[1])));
-	return (0);
-}
- */

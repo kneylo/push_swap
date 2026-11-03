@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 21:52:58 by mag               #+#    #+#             */
-/*   Updated: 2026/10/30 16:46:25 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:44:06 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,6 @@ int				print_ptr(void *ptr);
 int				print_int(int n);
 int				print_unsigned(unsigned int n);
 int				print_hex(char c, unsigned int n);
+int				print_f(double n);
 
 #endif

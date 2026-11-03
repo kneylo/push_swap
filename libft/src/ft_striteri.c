@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 13:47:52 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 17:32:03 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:01 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,21 +23,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-/* void	print(unsigned int i, char *str)
-{
-	(void) i;
-	printf("%c", str[0]);
-}
-
-int	main(int ac, char **av)
-{
-	char	*res;
-
-	if (ac != 2)
-		return (1);
-	res = av[1];
-	ft_striteri(res, print);
-	return (0);
-}
- */

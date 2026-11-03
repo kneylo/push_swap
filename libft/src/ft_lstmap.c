@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 17:46:43 by mag               #+#    #+#             */
-/*   Updated: 2026/10/08 14:35:49 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:32:25 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,23 +33,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (res);
 }
-
-/* void	*print(void *content)
-{
-	printf("%s", (char *)content);
-	return (content);
-}
-
-void	del(void *content)
-{
-	free(content);
-}
-
-int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	ft_lstmap(ft_lstnew(av[1]), print, del);
-	return (0);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 16:15:39 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 20:15:32 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:21:17 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,23 @@
 
 static void	small_stack(t_stack **a, t_bench *bench)
 {
-	int	biggest;
-	t_stack *tmp;
+	int		biggest;
+	t_stack	*tmp;
 
 	tmp = *a;
 	biggest = tmp->data;
-	ft_printf("%d\n", biggest);
 	while (tmp)
 	{
 		if (biggest < tmp->data)
 			biggest = tmp->data;
 		tmp = tmp->next;
 	}
-	ft_printf("%d\n", biggest);
 	tmp = *a;
 	if (biggest == tmp->data)
 		ra(a, bench);
 	else if (biggest == tmp->next->data)
 		rra(a, bench);
+	tmp = *a;
 	if (tmp->data > tmp->next->data)
 		sa(a, bench);
 }

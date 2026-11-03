@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 15:59:40 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 18:28:48 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:33:56 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strdup(const char *s1)
 	s2[i] = 0;
 	return (s2);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%s", ft_strdup(av[1]));
-	return (0);
-}
- */

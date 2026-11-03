@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 22:48:03 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 16:16:12 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:15 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%zu", ft_strlen(av[1]));
-	return (0);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 23:57:56 by mag               #+#    #+#             */
-/*   Updated: 2026/10/11 17:19:27 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:32:55 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 4)
-		return (1);
-	printf("%s", (char *)ft_memmove(av[1], av[2], atoi(av[3])));
-	return (0);
-}
- */

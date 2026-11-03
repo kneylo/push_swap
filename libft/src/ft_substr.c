@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 22:50:49 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 14:05:17 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:43 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res[len] = 0;
 	return (res);
 }
-
-/* int	main(int ac, char **av)
-{
-	char	*res;
-
-	if (ac != 4)
-		return (1);
-	res = ft_substr(av[1], atoi(av[2]), atoi(av[3]));
-	printf("%s", res);
-	free (res);
-	res = NULL;
-	return (0);
-}
- */

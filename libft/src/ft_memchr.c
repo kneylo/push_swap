@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 19:09:53 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 19:20:45 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:32:41 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		return ((unsigned char *)s + i);
 	return (NULL);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 4)
-		return (1);
-	printf("%s", (char *)ft_memchr(av[1], *av[2], atoi(av[3])));
-	return (0);
-}
- */

@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 16:37:54 by mag               #+#    #+#             */
-/*   Updated: 2026/10/08 17:00:33 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:30:10 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%d", ft_isalpha(*av[1]));
-	return (0);
-}
- */

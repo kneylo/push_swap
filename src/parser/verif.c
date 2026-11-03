@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 14:19:02 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 15:30:37 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 13:42:33 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static char	**get_arg(int ac, char **av)
 	int		j;
 
 	i = 1;
-	while (ac > 2 && ft_strncmp(av[i], "--", 2) == 0)
+	while (ft_strncmp(av[i], "--", 2) == 0)
 		i++;
 	res = av + i;
 	if (*av[i] == 0)

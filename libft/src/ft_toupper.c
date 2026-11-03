@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:01:24 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 13:38:34 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:34:53 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_toupper(int c)
 		c = c - 32;
 	return (c);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%c", ft_toupper(*av[1]));
-	return (0);
-}
- */

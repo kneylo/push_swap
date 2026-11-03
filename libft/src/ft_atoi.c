@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 04:59:04 by mag               #+#    #+#             */
-/*   Updated: 2026/10/30 16:42:35 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:29:35 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	printf("%d\n", ft_atoi(av[1]));
-	return (0);
-}
- */

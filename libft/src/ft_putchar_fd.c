@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 14:15:47 by mag               #+#    #+#             */
-/*   Updated: 2026/10/07 18:39:03 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 14:33:10 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
-/* int	main(int ac, char **av)
-{
-	if (ac != 2)
-		return (1);
-	ft_putchar_fd(*av[1], 1);
-	return (0);
-}
- */

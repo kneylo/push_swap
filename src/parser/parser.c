@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 13:41:30 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 16:25:15 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 13:44:53 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ t_stack	*parser(int ac, char **av, t_algo *flag_algo, t_bench *bench)
 		if (ft_strncmp(av[i], "--bench", 8) == 0)
 			bench->flag += 1;
 		else
-			*flag_algo = flag(av);
+			*flag_algo = flag(av[i]);
 	}
 	if (*flag_algo == ERR || bench->flag >= 2)
 		return (ft_printf("Error\n"), NULL);
