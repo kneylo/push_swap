@@ -6,7 +6,7 @@
 #    By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/03 15:55:04 by nkreter           #+#    #+#              #
-#    Updated: 2026/11/03 15:55:09 by nkreter          ###   ########.fr        #
+#    Updated: 2026/11/03 15:58:08 by nkreter          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,7 +62,7 @@ fclean: clean
 	@make fclean -C libft --no-print-directory
 
 ffclean: fclean
-	rm -f a.out
+	rm -f ./push_swap
 
 re: fclean all
 
