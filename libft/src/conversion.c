@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 18:10:36 by mag               #+#    #+#             */
-/*   Updated: 2026/11/03 15:14:46 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/04 04:38:42 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	conversion(char c, va_list *args)
 	else if (c == 'x' || c == 'X')
 		return (print_hex(c, va_arg(*args, unsigned int)));
 	else if (c == 'f')
-		return (print_f(va_arg(*args, double)));
+		return (print_double(va_arg(*args, double)));
 	else if (c == '%')
 		return (ft_putchar_fd('%', 1), 1);
 	else

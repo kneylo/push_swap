@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:02:05 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 19:39:42 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/04 04:50:56 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ void	sa(t_stack **a, t_bench *bench)
 	if (!*a || !(*a)->next)
 		return ;
 	swap(a);
-	if (!bench->flag)
-		ft_printf("sa\n");
+	ft_printf("sa\n");
 	bench->sa++;
 	bench->total++;
 }
@@ -39,8 +38,7 @@ void	sb(t_stack **b, t_bench *bench)
 	if (!*b || !(*b)->next)
 		return ;
 	swap(b);
-	if (!bench->flag)
-		ft_printf("sb\n");
+	ft_printf("sb\n");
 	bench->sb++;
 	bench->total++;
 }
@@ -51,8 +49,7 @@ void	ss(t_stack **a, t_stack **b, t_bench *bench)
 		return ;
 	swap(a);
 	swap(b);
-	if (!bench->flag)
-		ft_printf("ss\n");
+	ft_printf("ss\n");
 	bench->ss++;
 	bench->total++;
 }

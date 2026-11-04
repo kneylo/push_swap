@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 21:52:58 by mag               #+#    #+#             */
-/*   Updated: 2026/11/03 14:44:06 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/04 04:27:32 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,18 @@ int				print_ptr(void *ptr);
 int				print_int(int n);
 int				print_unsigned(unsigned int n);
 int				print_hex(char c, unsigned int n);
-int				print_f(double n);
+int				print_double(double n);
+
+// FT_PRINTF_FD
+int				ft_printf_fd(int fd, const char *str, ...);
+int				conversion_fd(int fd, char c, va_list *args);
+void			putbase_fd(int fd, unsigned long n, char *base);
+int				print_char_fd(int fd, int c);
+int				print_str_fd(int fd, char *str);
+int				print_ptr_fd(int fd, void *ptr);
+int				print_int_fd(int fd, int n);
+int				print_unsigned_fd(int fd, unsigned int n);
+int				print_hex_fd(int fd, char c, unsigned int n);
+int				print_double_fd(int fd, double n);
 
 #endif

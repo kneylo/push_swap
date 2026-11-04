@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:19:15 by mag               #+#    #+#             */
-/*   Updated: 2026/11/03 14:25:46 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/04 02:35:31 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,13 +70,14 @@ t_stack			*stack_new(long data);
 t_stack			*stack_last(t_stack *lst);
 t_stack			*stack_last_prev(t_stack *lst);
 void			stack_add_back(t_stack **lst, t_stack *new);
+void			stack_clear(t_stack **lst);
+void			stack_delone(t_stack *lst);
 
 // ALGO
 void			simple(t_stack **a, t_stack **b, t_bench *bench);
 void			medium(t_stack **a, t_stack **b, t_bench *bench);
 void			complex(t_stack **a, t_stack **b, t_bench *bench);
-void			adaptive(t_stack **a, t_stack **b, t_algo *flag_algo,
-					t_bench *bench);
+void			adaptive(t_stack **a, t_stack **b, t_bench *bench);
 int				find_max_bits(int stack_size);
 void			indexing(t_stack *a);
 
@@ -88,5 +89,7 @@ t_stack			*parser(int ac, char **av, t_algo *flag_algo, t_bench *bench);
 double			compute_disorder(t_stack *a);
 
 // FONCTIONS
+double			compute_disorder(t_stack *a);
+void			print_bench(t_bench *bench, t_algo strat);
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   complex.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:49:27 by nkreter           #+#    #+#             */
-/*   Updated: 2026/11/02 18:16:49 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/03 16:16:01 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	indexing(t_stack *a)
 	t_stack	*current;
 
 	i = 0;
-	while (i != (int)stack_size(a))
+	while (i < (int)stack_size(a))
 	{
 		current = a;
 		min = NULL;
@@ -56,16 +56,16 @@ void	complex(t_stack **a, t_stack **b, t_bench *bench)
 	int	size;
 
 	bit = 0;
+	indexing(*a);
 	size = stack_size(*a);
 	max_bits = find_max_bits(size - 1);
-	indexing(*a);
 	while (bit < max_bits)
 	{
 		i = 0;
 		while (i < size)
 		{
 			if ((((*a)->index >> bit) & 1) == 0)
-				pb(a, b, bench);
+				pb(b, a, bench);
 			else
 				ra(a, bench);
 			i++;

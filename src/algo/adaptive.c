@@ -6,30 +6,21 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 20:52:43 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 22:18:30 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/04 02:06:40 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	adaptive(t_stack **a, t_stack **b, t_algo *flag_algo, t_bench *bench)
+void	adaptive(t_stack **a, t_stack **b, t_bench *bench)
 {
 	double	disorder;
 
-	disorder = compute_disorder(*a);
+	disorder = bench->disorder;
 	if (disorder < 0.2)
-	{
 		simple(a, b, bench);
-		*flag_algo = SIMPLE;
-	}
 	else if (disorder < 0.5)
-	{
 		medium(a, b, bench);
-		*flag_algo = MEDIUM;
-	}
 	else
-	{
 		complex(a, b, bench);
-		*flag_algo = COMPLEX;
-	}
 }

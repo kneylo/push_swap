@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: mag <mag@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/19 20:10:09 by mag               #+#    #+#              #
-#    Updated: 2026/11/03 14:24:54 by mag              ###   ########.fr        #
+#    Created: 2026/11/03 15:55:04 by nkreter           #+#    #+#              #
+#    Updated: 2026/11/04 02:37:04 by mag              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,8 @@ SRC = src/stack/stack_add_back.c \
 	src/stack/stack_last.c \
 	src/stack/stack_new.c \
 	src/stack/stack_size.c \
+	src/stack/stack_delone.c \
+	src/stack/stack_clear.c \
 	src/moves/swap.c \
 	src/moves/push.c \
 	src/moves/rotate.c \
@@ -29,7 +31,8 @@ SRC = src/stack/stack_add_back.c \
 	src/parser/verif.c \
 	src/parser/parser_utils.c \
 	src/parser/parser.c \
-	src/disorder.c
+	src/disorder.c \
+	src/print_bench.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -62,7 +65,7 @@ fclean: clean
 	@make fclean -C libft --no-print-directory
 
 ffclean: fclean
-	rm -f a.out
+	rm -f ./push_swap
 
 re: fclean all
 

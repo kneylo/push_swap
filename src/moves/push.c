@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:48:50 by mag               #+#    #+#             */
-/*   Updated: 2026/11/02 11:15:58 by nkreter          ###   ########.fr       */
+/*   Updated: 2026/11/04 04:49:59 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ void	pa(t_stack **a, t_stack **b, t_bench *bench)
 	*b = (*b)->next;
 	tmp->next = *a;
 	*a = tmp;
-	if (!bench->flag)
-		ft_printf("pa\n");
+	ft_printf("pa\n");
 	bench->pa++;
 	bench->total++;
 }
@@ -38,8 +37,7 @@ void	pb(t_stack **b, t_stack **a, t_bench *bench)
 	*a = (*a)->next;
 	tmp->next = *b;
 	*b = tmp;
-	if (!bench->flag)
-		ft_printf("pb\n");
+	ft_printf("pb\n");
 	bench->pb++;
 	bench->total++;
 }
