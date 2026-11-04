@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: nkreter <nkreter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 13:41:30 by mag               #+#    #+#             */
-/*   Updated: 2026/11/04 05:16:01 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/04 19:01:45 by nkreter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_stack	*parser(int ac, char **av, t_algo *flag_algo, t_bench *bench)
 	long	*tab;
 	t_stack	*stack;
 
-	if (ac < 3)
+	if (ac < 2)
 		return (NULL);
 	len = 0;
 	tab = verif(ac, av, &len);
